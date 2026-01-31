@@ -1,0 +1,31 @@
+public class Shape{
+  public int l;
+  public int b;
+  
+  Shape(int l){
+    this.l = l;
+  }
+  
+  Shape(int l,int b){
+    this.l = l;
+    this.b = b;
+  }
+  
+  public void Area(int l){
+    System.out.println("Area: " + l*l);
+  }
+  
+  public void Area(int l,int b){
+    System.out.println("Area: " + l*b);
+  }
+  
+  public static void main(String[] args){
+    Shape square = new Shape(4);
+    Shape rectangle = new Shape(5,6);
+    
+    square.Area(4);
+    rectangle.Area(5,6);
+    
+  }
+  
+}
